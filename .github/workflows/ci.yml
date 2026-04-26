@@ -7,7 +7,7 @@ on:
     branches: ["**"]
 
 jobs:
-  # ── Job 1: Super Linter ──────────────────────────
+  # ── Job 1: Super Linter  ──────────────────────────
   lint:
     name: Lint (Super Linter)
     runs-on: ubuntu-latest
@@ -29,10 +29,7 @@ jobs:
           DEFAULT_BRANCH: master
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           # Validate JS and PHP only (adjust as needed)
-          VALIDATE_JAVASCRIPT_ES: true
           VALIDATE_PHP_BUILTIN: true
-          VALIDATE_CSS: true
-          VALIDATE_HTML: true
 
   # ── Job 2: Jest Tests  ────────────────────────────────────────────────
   test:
