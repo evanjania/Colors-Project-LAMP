@@ -33,10 +33,6 @@ jobs:
           VALIDATE_PHP_BUILTIN: true
           VALIDATE_CSS: true
           VALIDATE_HTML: true
-          # Disable linters not used in this project
-          VALIDATE_PYTHON_PYLINT: false
-          VALIDATE_RUBY: false
-          VALIDATE_TYPESCRIPT_ES: false
 
   # ── Job 2: Jest Tests  ────────────────────────────────────────────────
   test:
