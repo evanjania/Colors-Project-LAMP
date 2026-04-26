@@ -1,0 +1,24 @@
+{
+  "name": "colors-project-lamp-tests",
+  "version": "1.0.0",
+  "description": "Jest test suite for Colors-Project-LAMP (CI use only – not part of the PHP app)",
+  "private": true,
+  "scripts": {
+    "test": "jest --coverage",
+    "test:unit": "jest public/tests/",
+    "test:integration": "jest api/tests/"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "testMatch": [
+      "**/tests/**/*.test.js"
+    ],
+    "collectCoverageFrom": [
+      "public/tests/**/*.js",
+      "api/tests/**/*.js"
+    ]
+  },
+  "devDependencies": {
+    "jest": "^29.0.0"
+  }
+}
